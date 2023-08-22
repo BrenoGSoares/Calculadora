@@ -1,0 +1,119 @@
+:root{
+    --dark-blue: #182033;
+    --blue: #344059;
+    --grey: #5B698E;
+    --beige: #E9EAEC;
+    --dark-beige: #BFB2A3;
+    --red: #BF3D30;
+}  */
+
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+body{
+    background-color: var(--blue);
+}
+
+#text, #result, h1,h2{
+    color: var(--beige)
+}
+
+     
+/* CORPO DA CALCULADORA */
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;   
+    width: 400px;
+    height: 400px;
+}
+
+.screen, .buttons{
+    background-color: var(--dark-blue);
+    border-radius: 0.5rem;
+}
+
+.screen{
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+
+ /* AJUSTE BOTÕES */
+ 
+.interface{
+    display: grid;
+    grid-template-rows: 1fr;
+    padding: 1rem 1rem;
+    justify-items: center;
+    gap: 1rem;
+}
+
+
+.numbers{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.number {
+    background-color: var(--beige);
+}
+
+.operators{
+    display: grid;
+    grid-column: 2;    
+}
+
+.numbers, .operators{
+    gap: 1rem;
+    justify-items: center;
+}
+
+.numbers > button, .operators > button {
+    height: 3rem;
+    width: 5rem;
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+    border: none;
+    box-shadow: 0px 3px var(--dark-beige);
+}
+
+.functions{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 0 1rem 1rem 1rem;
+    justify-items: stretch;
+    gap: 1rem;
+}
+
+.functions > button{
+    height: 3rem;
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+
+#text{
+    background-color: var(--grey);
+    box-shadow: 0px 3px #46506d;
+}
+
+#result{
+    background-color: var(--red);
+    box-shadow: 0px 3px #8f3027;
+}
