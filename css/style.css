@@ -5,10 +5,10 @@
     --beige: #E9EAEC;
     --dark-beige: #BFB2A3;
     --red: #BF3D30;
-}  */
+}  
 
 
-*{
+*, .screen{
     margin:0;
     padding: 0;
 }
@@ -18,7 +18,7 @@ body{
     background-color: var(--blue);
 }
 
-#text, #result, h1,h2{
+#text, #result, h1,h2, p{
     color: var(--beige)
 }
 
@@ -51,6 +51,7 @@ body{
     width: 100%;
     height: 4rem;
     margin-bottom: 1rem;
+    padding: 0.8rem 0;
 }
 
  /* AJUSTE BOTÕES */
@@ -138,7 +139,7 @@ body{
 /* Tela da calculadora */
 
 #value{
+    font-size: 2.5rem;
     text-align: end;
-    padding-right: 1rem;
-    margin: 1rem;
+    padding: 0 1rem;
 }
