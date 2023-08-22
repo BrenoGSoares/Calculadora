@@ -132,7 +132,7 @@ body{
 }
 
 .number:hover {
-    background-color: #a1978c;
+    background-color: var(--dark-beige);
 }
 
 /* Tela da calculadora */
