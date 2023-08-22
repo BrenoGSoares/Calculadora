@@ -83,12 +83,18 @@ body{
     justify-items: center;
 }
 
-.numbers > button, .operators > button {
+
+.number {
     height: 3rem;
-    width: 5rem;
     padding: 0.8rem;
     border-radius: 0.3rem;
     border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.numbers > button, .operators > button {
+    width: 5rem;
     box-shadow: 0px 3px var(--dark-beige);
 }
 
@@ -100,20 +106,39 @@ body{
     gap: 1rem;
 }
 
-.functions > button{
-    height: 3rem;
-    padding: 0.8rem;
-    border-radius: 0.3rem;
-    border: none;
+
+#text,
+#result,
+.number {
+    transition: 0.5s;
 }
 
-
-#text{
+#text {
     background-color: var(--grey);
     box-shadow: 0px 3px #46506d;
 }
 
-#result{
+#text:hover {
+    background-color: #46506d;
+}
+
+#result {
     background-color: var(--red);
     box-shadow: 0px 3px #8f3027;
+}
+
+#result:hover {
+    background-color: #8f3027;
+}
+
+.number:hover {
+    background-color: #a1978c;
+}
+
+/* Tela da calculadora */
+
+#value{
+    text-align: end;
+    padding-right: 1rem;
+    margin: 1rem;
 }
